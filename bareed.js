@@ -99,15 +99,11 @@ class Vendor extends Person {
 
     this.range = 5;
     this.price = 1;
-
-    sellTo = (customer, numberOfIceCreams) => {
-      console.log("this is customer ", customer);
-      const totalprice = price * numberOfIceCreams;
-      this.location = customer;
-      this.wallet = totalprice;
-    };
-    // implement Vendor!
   }
+  sellTo = (move) => {
+    this.mmoveTo();
+  };
+  // implement Vendor!
 }
 
 /**********************************************************
